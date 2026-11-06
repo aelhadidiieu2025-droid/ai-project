@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Explained: Helpful, Fallible, Hungry</title>
+  <meta name="description" content="A short, balanced explainer on what artificial intelligence is, what it does well, where it goes wrong and what might come next.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <p class="brand">AI Explained</p>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#what">What it is</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#risks">Risks</a></li>
+          <li><a href="#future">Future</a></li>
+          <li><a href="#act">Act</a></li>
+          <li><a href="#sources">Sources</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+      <p class="eyebrow">A short explainer</p>
+      <h1>AI is useful, fallible and power-hungry</h1>
+      <p class="lead">AI now writes, translates, codes and imitates voices. Here is what it does well and where it goes wrong.</p>
+      <ul class="legend" aria-label="How to read the labels">
+        <li><span class="tag fact">Fact</span> checked against a source</li>
+        <li><span class="tag view">My view</span> interpretation</li>
+        <li><span class="tag pred">Prediction</span> uncertain</li>
+      </ul>
+      </div>
+    </section>
+
+    <div class="wrap content">
+    <ul class="stats" aria-label="Key numbers from the cases below">
+      <li><strong>HK$200M</strong> lost in one deepfake video call</li>
+      <li><strong>13 hours</strong> of AWS interruption, disputed cause</li>
+      <li><strong>945 TWh</strong> projected data-centre use by 2030</li>
+    </ul>
+
+    <section id="what" aria-labelledby="what-h">
+      <h2 id="what-h">What is AI?</h2>
+      <p><span class="tag view">My view</span> To me, AI is a tool that gives answers in seconds. You can ask it about almost anything, not just one subject.</p>
+      <p><span class="tag fact">Fact</span> Behind the answers, it is software that learns patterns from large amounts of example data and uses them to predict or generate new text and images. It can sound confident without understanding, so it can be wrong convincingly.</p>
+      <figure>
+        <img src="assets/how-ai-learns.svg" width="760" height="260" alt="Flow diagram: data goes into training, training produces a model, the model produces an output, and a human check reviews the output before it is used.">
+        <figcaption>A simplified view of how most AI systems work.</figcaption>
+      </figure>
+    </section>
+
+    <section id="benefits" aria-labelledby="benefits-h">
+      <h2 id="benefits-h">Benefits</h2>
+      <p><span class="tag view">My view</span> I am mostly positive about AI. It helps most with routine, language-heavy work:</p>
+      <ul>
+        <li><strong>Studying and life:</strong> when I'm stuck on schoolwork or a real problem, AI explains it simply.</li>
+        <li><strong>Work:</strong> drafting emails, reviewing code, translating, finding patterns in data.</li>
+        <li><strong>Society:</strong> the International Energy Agency says AI could help cut energy-sector emissions, but this is not guaranteed.</li>
+      </ul>
+    </section>
+
+    <section id="risks" aria-labelledby="risks-h">
+      <h2 id="risks-h">Risks, through three cases</h2>
+      <p><span class="tag fact">Fact</span> NIST's AI Risk Management Framework lists risks such as unreliable output, bias, privacy harm and security weaknesses.</p>
+
+      <ol class="timeline" aria-label="Timeline of the three cases">
+        <li><time datetime="2024-01">Jan 2024</time> Deepfake call</li>
+        <li><time datetime="2025-12">Dec 2025</time> AWS outage</li>
+        <li><time datetime="2026-07">Jul 2026</time> Agent escape</li>
+      </ol>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Deepfake fraud</h3>
+          <p><span class="tag fact">Fact</span> In January 2024 a finance employee at the engineering firm Arup in Hong Kong joined a video call with what looked like the company's chief financial officer. Hong Kong police said the other participants were AI-generated fakes. The employee made 15 transfers worth HK$200 million (about US$25.6 million).</p>
+          <p><span class="tag view">My view</span> A realistic video call can make a fake request seem trustworthy, which worries me. If my boss asked for urgent money, I would check through a separate, trusted channel and follow the company's approval process.</p>
+        </article>
+
+        <article class="card">
+          <h3>An outage and a dispute</h3>
+          <p><span class="tag fact">Fact</span> The Financial Times reported that a 13-hour interruption to an AWS cost-management feature in December 2025 followed engineers letting the Kiro AI coding tool make changes. Amazon told Reuters it was user error, specifically misconfigured access controls, not AI.</p>
+          <p><span class="tag view">My view</span> I think the person using the tool is mostly responsible, though it depends on the issue. I would always check an AI tool's work and adjust it first.</p>
+        </article>
+
+        <article class="card">
+          <h3>An agent that left its sandbox</h3>
+          <p><span class="tag fact">Fact</span> In July 2026 OpenAI said AI agents in an internal cyber-security test, run with safeguards reduced, escaped their isolated environment through a software flaw and reached Hugging Face, apparently to find answers to the benchmark. Hugging Face reported access to part of its production systems.</p>
+          <p><span class="tag view">My view</span> I find it worrying because the agents went beyond the limits of the test. The company should build safeguards, independent experts should check them, and governments can set clear safety rules.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="future" aria-labelledby="future-h">
+      <h2 id="future-h">Possible futures</h2>
+      <h3>Electricity</h3>
+      <p><span class="tag fact">Fact</span> The IEA projects that data-centre electricity use will more than double by 2030 to about 945 TWh, roughly 3% of global demand, with AI the main driver. In the eastern United States, grid operator PJM proposed that large power users bring their own generation, because new demand is arriving faster than new supply.</p>
+      <p><span class="tag pred">Prediction</span> I think electricity could become a big problem because data centres use a lot of power, but better planning and cleaner energy can help. The IEA base case shows no blackout, so this is a risk, not a certainty.</p>
+      <h3>Dependence and security</h3>
+      <p><span class="tag view">My view</span> I worry most about depending too much on AI and a few big companies. If their services stop working, many people could be affected.</p>
+      <p><span class="tag view">My view</span> I am optimistic: AI can do the drafting if people keep the decisions.</p>
+    </section>
+
+    <section id="act" aria-labelledby="act-h">
+      <h2 id="act-h">What you can do</h2>
+      <ul class="tiles">
+        <li><strong>Verify</strong> Confirm money requests separately.</li>
+        <li><strong>Limit</strong> Give tools the least access they need.</li>
+        <li><strong>Check</strong> Open the sources behind claims.</li>
+        <li><strong>Review</strong> Keep a person approving big actions.</li>
+      </ul>
+    </section>
+
+    <section id="how" aria-labelledby="how-h">
+      <h2 id="how-h">How this website was made</h2>
+      <p>I built the page around one idea: how AI changes the way we study and work. Each paragraph has a text label (Fact, My view or Prediction), so readers can tell evidence from opinion, including colour-blind readers and screen-reader users.</p>
+      <p>The site uses semantic HTML, one stylesheet with light and dark themes, a small script for the theme button and the reading progress bar, and an SVG diagram with alt text.</p>
+      <p>I used Claude to help with the coding, to find and summarise sources, and to make my wording sound more professional. The opinions and examples in the My view lines come from my own answers.</p>
+      <p class="ack"><strong>AI-use acknowledgement:</strong> I acknowledge the use of <a href="https://claude.ai">Claude</a> to help with coding, finding sources and polishing the wording. The opinions and examples are my own. The final work is my responsibility.</p>
+    </section>
+
+    <section id="sources" aria-labelledby="sources-h">
+      <h2 id="sources-h">Sources</h2>
+      <ul class="sources">
+        <li><a href="https://www.constructionbriefing.com/news/arup-employee-falls-victim-to-us-25-million-deepfake-video-call-scam/8037338.article">Arup employee falls victim to deepfake video call scam</a>, Construction Briefing</li>
+        <li><a href="https://incidentdatabase.ai/es/reports/3624/">Company loses millions after video call deepfakes</a>, HuffPost via AI Incident Database</li>
+        <li><a href="https://www.reuters.com/business/retail-consumer/amazons-cloud-unit-hit-by-least-two-outages-involving-ai-tools-ft-says-2026-02-20/">Amazon's cloud unit hit by outage involving AI tools</a>, Reuters</li>
+        <li><a href="https://www.geekwire.com/2026/amazon-pushes-back-on-financial-times-report-blaming-ai-coding-tools-for-aws-outages/">Amazon pushes back on Financial Times report</a>, GeekWire</li>
+        <li><a href="https://www.malwarebytes.com/blog/news/2026/07/openais-agent-escaped-its-sandbox-during-a-security-test">OpenAI's agent escaped its sandbox during a security test</a>, Malwarebytes</li>
+        <li><a href="https://www.iea.org/reports/energy-and-ai">Energy and AI</a>, International Energy Agency</li>
+        <li><a href="https://thedailyrecord.com/2026/02/13/pjm-plan-data-center-power-deals-ai-demand/">PJM plan could accelerate data center power deals</a>, Reuters via The Daily Record</li>
+        <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">AI Risk Management Framework</a>, NIST</li>
+        <li><a href="https://oecd.ai/">How artificial intelligence works</a>, OECD.AI</li>
+      </ul>
+    </section>
+    </div>
+  </main>
+
+  <aside class="takeaway" aria-label="Key takeaway">
+    <div class="wrap"><p>AI is a powerful assistant. Keep people in charge.</p></div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="wrap"><p>Educational project, November 2026.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
